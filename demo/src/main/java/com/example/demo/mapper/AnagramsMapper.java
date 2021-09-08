@@ -13,5 +13,9 @@ public interface AnagramsMapper {
             ")\n" +
             "select word, id from context where charset=(select charset from context where word=#{strCurrentLine} limit 1) and length(word) = length(#{strCurrentLine})")
     TreeSet<String> showAll(String strCurrentLine);
+    @Select("Copy dict(word) from 'C:\\Users\\andrei.lisa\\IdeaProjects\\qwe\\folder\\file.txt'")
+    void add();
+
+
 
 }

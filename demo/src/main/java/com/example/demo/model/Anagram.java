@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 public class Anagram {
 
     @JsonProperty(value = "id")
-    private long id;
+    private Long id;
     @JsonProperty(value = "word")
     private String word;
 
