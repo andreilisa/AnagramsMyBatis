@@ -28,15 +28,7 @@ public class SwaggerConfig {
                         .version("1.0")
                         .title("Anagrams")
                         .description("From Database")
-                        .build())
-                .securitySchemes(singletonList(new BasicAuth("basicAuth")))
-                .securityContexts(singletonList(SecurityContext.builder()
-                        .securityReferences(singletonList(SecurityReference.builder()
-                                .reference("basicAuth")
-                                .scopes(new AuthorizationScope[0])
-                                .build()))
-                        .forPaths(PathSelectors.regex("/api/v1/products.*"))
-                        .build()));
+                        .build());
     }
 
 
